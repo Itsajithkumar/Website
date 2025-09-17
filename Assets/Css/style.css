@@ -1,0 +1,86 @@
+/* import Css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+/* CSS gloabl vaiable devclaration */
+:root {
+     --dark-black: #030303;
+    --pure-white: #ffffff;
+    --sky-blue: #0D6EFD;
+    --grey: #686868;
+    --h1-font: 7rem;
+    --h2-font: 3.2rem;
+    --h3-font: 2.8rem;
+    --h4-font: 2.4rem;
+    --font-20px: 2rem;
+    --h5-font: 1.8rem;
+    --p-font: 1.6rem;
+    --font-segoe-UI: 'Segoe UI';
+}
+/* body and Common Slecetor */
+body{
+    font-family: poppins, sans-serif;
+}
+/* Bottom Margin reduce Purpose*/
+.h1, .h2, .h3, 
+.h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+margin-bottom: 0;
+}
+/* class create Background color Change */
+.dark-black
+{
+    background-color: var(--dark-black) ;
+}
+/* class create Text color Dark Black Change Purpose */
+.dark-black-text{
+    color: var(--dark-black);
+}
+/* class create increase the font weight*/
+.fw-600{
+    font-weight: 600;
+}
+/* class create grey color Change Purpose */
+.grey_color{
+    color: var(--grey);
+}
+/* h1 Tag Font Setup Purpose */
+h1{
+    
+}   
+/* h2 Tag Font Setup Purpose */
+h2{
+    font-size: var(--h2-font);
+
+}
+/* h3 Tag Font Setup Purpose */
+h3{
+    font-size: var(--h3-font);
+}
+/* h4 Tag Font Setup Purpose */
+h4{
+    font-size: var(--h4-font);
+}
+/* h5 Tag Font Setup Purpose */
+h5{
+    font-size: var(--h5-font);
+}
+/* p Tag Font Setup Purpose */
+p,.p-font-size{
+    font-size: var(--p-font);
+}
+/* class create segoe font family Change Purpose */
+.segoe-font
+{
+    font-family: var(--font-segoe-UI);
+}
+/* classs create for give Space alignment Purpose */
+/* 1 rem=10px */
+.mt-100{
+    margin-top: 100px;
+}
