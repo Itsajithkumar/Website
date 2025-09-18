@@ -84,3 +84,33 @@ p,.p-font-size{
 .mt-100{
     margin-top: 100px;
 }
+
+/* imp! Section-1 (Navbar Section) */
+
+.nav-link{
+    font-size: var(--p-font);
+    padding: 1rem 0.2rem;
+    position: relative;
+}
+/* nav link underline effect */
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.15rem;
+    background-color: var(--pure-white);
+    bottom: 0.2rem;
+    left: 0;
+    visibility: hidden;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+/* nav link underline effect on hover and active */
+.nav-link:hover::before,.nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+/* Navbar Font  size change*/
+.navbar-toggler .fa-solid.fa-bars{
+    font-size: 2rem;
+}
